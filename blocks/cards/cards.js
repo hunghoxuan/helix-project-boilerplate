@@ -15,7 +15,4 @@ export default function decorate(block) {
   ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
   block.textContent = '';
   block.append(ul);
-  // const h1 = document.createElement('h1');
-  // h1.textContent = 'fasdfa';
-  block.append(h1);
 }
